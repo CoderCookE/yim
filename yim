@@ -2,12 +2,12 @@
 type=$1
 if [ $type == "js" ]
 then
-  echo "switching to yarn js"
+  echo "switching to JS yarnpkg"
   ln -fs /usr/local/Cellar/yarn/1.7.0/bin/yarn /usr/local/bin/yarn
 fi
 
 if [ $type == "real" ]
 then
-  echo "switched to hadoop yarn"
-  ln -fs /usr/local/Cellar/../Cellar/hadoop/3.1.0/bin/yarn /usr/local/bin/yarn
+  echo "switching to Hadoop YARN"
+  ln -fs /usr/local/Cellar/hadoop/3.1.0/bin/yarn /usr/local/bin/yarn
 fi
